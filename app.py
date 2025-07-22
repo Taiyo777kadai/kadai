@@ -6,7 +6,7 @@ st.title('売上予測アプリ')
 
 # 入力フォーム
 youbi = st.selectbox('曜日区分を選択してください', ['平日', '休日', '祝祭日'])
-tenki = st.selectbox('天気を選択してください', ['晴れ', '雨', '曇り'])
+tenki = st.selectbox('天気を選択してください', ['晴', '雨', '曇'])
 
 # 予測ボタン
 if st.button('売上を予測'):
@@ -16,7 +16,7 @@ if st.button('売上を予測'):
     data = df[(df['曜日区分'] == youbi) & (df['天気'] == tenki)]
     if len(data) == 0:
         st.warning('該当するデータがありません。サンプルデータから予測します。')
-        yoso = 10000  # データがない場合の仮の予測値
+        yoso = 700000  # データがない場合の仮の予測値
     else:
         yoso = data['売上'].mean()
         st.success(f'{youbi}・{tenki}の予測売上は {int(yoso)} 円です。')
