@@ -1,0 +1,14 @@
+曜日区分,天気,売上
+平日　,晴,650000
+平日　,曇,630000
+平日　,雨,600000
+休日　,晴,800000
+休日　,曇,780000
+休日　,雨,750000
+祝祭日　,晴,900000
+祝祭日　,曇,870000
+祝祭日,雨,850000
+平日,晴,650000
+& C:/Users/taiyo/AppData/Local/Microsoft/WindowsApps/python3.12.exe c:/Users/taiyo/OneDrive/デスクトップ/売上予測.py,& C:/Users/taiyo/AppData/Local/Microsoft/WindowsApps/python3.12.exe c:/Users/taiyo/OneDrive/デスクトップ/売上予測.py,700000
+平日,晴,650000
+休日,曇,700000
